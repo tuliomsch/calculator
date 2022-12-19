@@ -1,0 +1,8 @@
+#b15 {
+    grid-column: 4;
+    grid-row: 4 / 6;
+}
+
+#b16 {
+    grid-column: 1 / 3;
+}

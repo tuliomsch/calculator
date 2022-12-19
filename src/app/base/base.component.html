@@ -1,0 +1,15 @@
+<div class="bg-lime-300 flex-col h-fit rounded-3xl">
+    <div class="bg-gray-200 w-80 m-auto rounded-lg mt-8 mb-3 p-2">
+        <h2 class="h-10 text-right text-3xl">{{ input }}</h2>
+        <h2 class="h-10 text-right text-3xl">{{ result }}</h2>
+    </div>
+    <div class="buttons grid grid-cols-4 ml-3 mr-3 mb-4">
+        <app-button
+            *ngFor="let button of buttons"
+            [button]="button"
+            (click)="clickButton(button)"
+            id="{{ button?.id }}"
+        >
+        </app-button>
+    </div>
+</div>
